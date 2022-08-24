@@ -34,9 +34,4 @@ public class HelloRestController {
         return "Hello "+ user.getFirstname() + "" + user.getLastname();
     }
 
-    //localhost8080:/put/Mrunali/?lastname=Deore
-    @PutMapping("/put/{firstname}")
-    public String getFirstName(@PathVariable String firstname,@RequestParam(value ="lastname") String lastname){
-        return "Hello " + firstname + " " + lastname;
-    }
 }
